@@ -19,7 +19,7 @@ def generate():
     today = date.today().isoformat()
     base_url = "https://virasatsrc.github.io/The-Sikh-Regiment-History/"
 
-    excluded = {"googlec6765fedd1f53eb0.html", "art_template.html", "index_template.html"}
+    excluded = {"googlec6765fedd1f53eb0.html", "google0c6c8b8e499a89ad.html", "art_template.html", "index_template.html"}
     all_files = sorted(list(set(glob.glob("*.html")) - excluded))
 
     def get_stem_and_lang(f):

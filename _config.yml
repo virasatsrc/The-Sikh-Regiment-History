@@ -10,6 +10,7 @@ repository: "virasatsrc/The-Sikh-Regiment-History"
 markdown: kramdown
 include:
   - _redirects
+  - google0c6c8b8e499a89ad.html
   - googlec6765fedd1f53eb0.html
   - sitemap.xml
   - robots.txt

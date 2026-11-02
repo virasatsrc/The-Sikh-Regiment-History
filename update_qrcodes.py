@@ -2,7 +2,7 @@ import os
 import qrcode
 
 # GitHub Pages base URL
-BASE_URL = "https://virasatsrc.github.io/museum"
+BASE_URL = "https://virasatsrc.github.io/The-Sikh-Regiment-History"
 TOTAL_ART = 160
 QR_DIR = os.path.join("assets", "qrcodes")
 

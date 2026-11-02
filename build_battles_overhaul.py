@@ -487,7 +487,7 @@ def update_html_pages():
         cont_hi = soup_hi.find("div", class_="gallery-container") or soup_hi.find("body")
         if cont_hi: cont_hi.insert(0, hi_switcher)
         
-        if soup_hi.find("title"): soup_hi.find("title").string = f"{item['title_hi']} - विरासत संग्रहालय"
+        if soup_hi.find("title"): soup_hi.find("title").string = f"{item['title_hi']} - The Sikh Regiment History"
         if soup_hi.find("h1"): soup_hi.find("h1").string = item["title_hi"]
         
         home_a_hi = soup_hi.find("a", href=re.compile(r"index.*\.html"))
@@ -593,7 +593,7 @@ def update_html_pages():
         cont_pa = soup_pa.find("div", class_="gallery-container") or soup_pa.find("body")
         if cont_pa: cont_pa.insert(0, pa_switcher)
         
-        if soup_pa.find("title"): soup_pa.find("title").string = f"{item['title_pa']} - ਵਿਰਾਸਤ ਅਜਾਇਬ ਘਰ"
+        if soup_pa.find("title"): soup_pa.find("title").string = f"{item['title_pa']} - The Sikh Regiment History"
         if soup_pa.find("h1"): soup_pa.find("h1").string = item["title_pa"]
         
         home_a_pa = soup_pa.find("a", href=re.compile(r"index.*\.html"))

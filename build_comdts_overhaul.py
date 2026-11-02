@@ -717,7 +717,7 @@ def generate_html_page(item, lang, prev_num, next_num, total_pieces=32, piece_in
     elif lang == 'hi':
         filename = f"art{art_num}_hi.html"
         title = item["title_hi"]
-        site_title = f"{title} - विरासत संग्रहालय"
+        site_title = f"{title} - The Sikh Regiment History"
         home_url = "index_hi.html"
         home_text = "मुख्य पृष्ठ"
         audio_src = f"assets/audio_hi/audio_{art_num}.mp3"
@@ -743,7 +743,7 @@ def generate_html_page(item, lang, prev_num, next_num, total_pieces=32, piece_in
     else: # pa
         filename = f"art{art_num}_pa.html"
         title = item["title_pa"]
-        site_title = f"{title} - ਵਿਰਾਸਤ ਅਜਾਇਬ ਘਰ"
+        site_title = f"{title} - The Sikh Regiment History"
         home_url = "index_pa.html"
         home_text = "ਮੁੱਖ ਪੰਨਾ"
         audio_src = f"assets/audio_pa/audio_{art_num}.mp3"

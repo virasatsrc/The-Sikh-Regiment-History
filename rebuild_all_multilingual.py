@@ -282,7 +282,7 @@ def process_special_exhibit(filepath):
         h1_txt = h1_hi.text.strip()
         h1_hi.string = GLOSSARY_HI.get(h1_txt, translate_text(h1_txt, "hi"))
         if soup_hi.find("title"):
-            soup_hi.find("title").string = f"{h1_hi.string} - विरासत संग्रहालय"
+            soup_hi.find("title").string = f"{h1_hi.string} - The Sikh Regiment History"
 
     sub_p_hi = soup_hi.find("p", style=re.compile(r"color:\s*#94a3b8"))
     if sub_p_hi:
@@ -336,7 +336,7 @@ def process_special_exhibit(filepath):
         h1_txt = h1_pa.text.strip()
         h1_pa.string = GLOSSARY_PA.get(h1_txt, translate_text(h1_txt, "pa"))
         if soup_pa.find("title"):
-            soup_pa.find("title").string = f"{h1_pa.string} - ਵਿਰਾਸਤ ਅਜਾਇਬ ਘਰ"
+            soup_pa.find("title").string = f"{h1_pa.string} - The Sikh Regiment History"
 
     sub_p_pa = soup_pa.find("p", style=re.compile(r"color:\s*#94a3b8"))
     if sub_p_pa:
@@ -413,7 +413,7 @@ def process_single_art_page(filepath, art_dict):
 
     title_hi = translate_text(title_en, "hi")
     if soup_hi.find("title"):
-        soup_hi.find("title").string = f"{title_hi} - विरासत संग्रहालय"
+        soup_hi.find("title").string = f"{title_hi} - The Sikh Regiment History"
     if soup_hi.find("h1"):
         soup_hi.find("h1").string = title_hi
 
@@ -504,7 +504,7 @@ def process_single_art_page(filepath, art_dict):
 
     title_pa = translate_text(title_en, "pa")
     if soup_pa.find("title"):
-        soup_pa.find("title").string = f"{title_pa} - ਵਿਰਾਸਤ ਅਜਾਇਬ ਘਰ"
+        soup_pa.find("title").string = f"{title_pa} - The Sikh Regiment History"
     if soup_pa.find("h1"):
         soup_pa.find("h1").string = title_pa
 
@@ -612,7 +612,7 @@ def rebuild_index_pages(art_dict):
     # --- 2. Build complete index_hi.html ---
     soup_hi = BeautifulSoup(html_en, "html.parser")
     if soup_hi.find("title"):
-        soup_hi.find("title").string = "विरासत संग्रहालय - मुख्य गैलरी"
+        soup_hi.find("title").string = "The Sikh Regiment History - मुख्य गैलरी"
 
     for b in soup_hi.find_all("div", class_="lang-switch-bar"): b.decompose()
     c_hi = soup_hi.find("div", class_="gallery-container") or soup_hi.find("body")
@@ -715,7 +715,7 @@ def rebuild_index_pages(art_dict):
     # --- 3. Build complete index_pa.html ---
     soup_pa = BeautifulSoup(html_en, "html.parser")
     if soup_pa.find("title"):
-        soup_pa.find("title").string = "ਵਿਰਾਸਤ ਅਜਾਇਬ ਘਰ - ਮੁੱਖ ਗੈਲਰੀ"
+        soup_pa.find("title").string = "The Sikh Regiment History - ਮੁੱਖ ਗੈਲਰੀ"
 
     for b in soup_pa.find_all("div", class_="lang-switch-bar"): b.decompose()
     c_pa = soup_pa.find("div", class_="gallery-container") or soup_pa.find("body")

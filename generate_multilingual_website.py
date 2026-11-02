@@ -173,7 +173,7 @@ def process_art_page(filepath):
     soup_hi = BeautifulSoup(html, "html.parser")
     
     if soup_hi.find("title"):
-        soup_hi.find("title").string = f"{title_hi} - विरासत संग्रहालय"
+        soup_hi.find("title").string = f"{title_hi} - The Sikh Regiment History"
     if soup_hi.find("h1"):
         soup_hi.find("h1").string = title_hi
 
@@ -264,7 +264,7 @@ def process_art_page(filepath):
     soup_pa = BeautifulSoup(html, "html.parser")
     
     if soup_pa.find("title"):
-        soup_pa.find("title").string = f"{title_pa} - ਵਿਰਾਸਤ ਅਜਾਇਬ ਘਰ"
+        soup_pa.find("title").string = f"{title_pa} - The Sikh Regiment History"
     if soup_pa.find("h1"):
         soup_pa.find("h1").string = title_pa
 
@@ -442,7 +442,7 @@ def generate_index_galleries():
     # 2. Generate index_hi.html
     soup_hi = BeautifulSoup(html, "html.parser")
     if soup_hi.find("title"):
-        soup_hi.find("title").string = "विरासत संग्रहालय - मुख्य गैलरी"
+        soup_hi.find("title").string = "The Sikh Regiment History - मुख्य गैलरी"
     
     container_hi = soup_hi.find("div", class_="gallery-container")
     if container_hi:
@@ -469,7 +469,7 @@ def generate_index_galleries():
     # 3. Generate index_pa.html
     soup_pa = BeautifulSoup(html, "html.parser")
     if soup_pa.find("title"):
-        soup_pa.find("title").string = "ਵਿਰਾਸਤ ਅਜਾਇਬ ਘਰ - ਮੁੱਖ ਗੈਲਰੀ"
+        soup_pa.find("title").string = "The Sikh Regiment History - ਮੁੱਖ ਗੈਲਰੀ"
     
     container_pa = soup_pa.find("div", class_="gallery-container")
     if container_pa:

@@ -212,7 +212,7 @@ def update_html_pages():
             
         # ==================== BUILD HINDI PAGE ====================
         soup_hi = BeautifulSoup(str(soup_en), "html.parser")
-        if soup_hi.title: soup_hi.title.string = f"{item['title_hi']} - विरासत संग्रहालय"
+        if soup_hi.title: soup_hi.title.string = f"{item['title_hi']} - The Sikh Regiment History"
         
         # Switcher Bar
         bar_hi = soup_hi.find("div", class_="lang-switch-bar")
@@ -294,7 +294,7 @@ def update_html_pages():
             
         # ==================== BUILD PUNJABI PAGE ====================
         soup_pa = BeautifulSoup(str(soup_en), "html.parser")
-        if soup_pa.title: soup_pa.title.string = f"{item['title_pa']} - ਵਿਰਾਸਤ ਅਜਾਇਬ ਘਰ"
+        if soup_pa.title: soup_pa.title.string = f"{item['title_pa']} - The Sikh Regiment History"
         
         # Switcher Bar
         bar_pa = soup_pa.find("div", class_="lang-switch-bar")

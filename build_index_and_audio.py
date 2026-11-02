@@ -273,7 +273,7 @@ def generate_index_pages(art_dict):
     # --- 2. Build index_hi.html ---
     soup_hi = BeautifulSoup(html_en, "html.parser")
     if soup_hi.find("title"):
-        soup_hi.find("title").string = "विरासत संग्रहालय - मुख्य गैलरी"
+        soup_hi.find("title").string = "The Sikh Regiment History - मुख्य गैलरी"
 
     for b in soup_hi.find_all("div", class_="lang-switch-bar"): b.decompose()
     c_hi = soup_hi.find("div", class_="gallery-container") or soup_hi.find("body")
@@ -379,7 +379,7 @@ def generate_index_pages(art_dict):
     # --- 3. Build index_pa.html ---
     soup_pa = BeautifulSoup(html_en, "html.parser")
     if soup_pa.find("title"):
-        soup_pa.find("title").string = "ਵਿਰਾਸਤ ਅਜਾਇਬ ਘਰ - ਮੁੱਖ ਗੈਲਰੀ"
+        soup_pa.find("title").string = "The Sikh Regiment History - ਮੁੱਖ ਗੈਲਰੀ"
 
     for b in soup_pa.find_all("div", class_="lang-switch-bar"): b.decompose()
     c_pa = soup_pa.find("div", class_="gallery-container") or soup_pa.find("body")

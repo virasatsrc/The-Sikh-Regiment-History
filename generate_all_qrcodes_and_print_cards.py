@@ -5,7 +5,7 @@ import json
 import qrcode
 from PIL import Image, ImageDraw, ImageFont
 
-BASE_URL = "https://virasatsrc.github.io/museum"
+BASE_URL = "https://virasatsrc.github.io/The-Sikh-Regiment-History"
 
 ASSETS_QR_DIR = os.path.join("assets", "qrcodes")
 PRINT_QR_DIR = os.path.join("print QR", "qrcodes")

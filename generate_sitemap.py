@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate a Google-compliant sitemap.xml for Virasat - The Sikh Regimental Centre Heritage Museum.
+Generate a Google-compliant sitemap.xml for The Sikh Regiment History.
 Includes:
 - Full URL index (loc, lastmod, changefreq, priority)
 - Multilingual alternates (hreflang) across English, Hindi & Punjabi versions
@@ -17,7 +17,7 @@ from datetime import date
 
 def generate():
     today = date.today().isoformat()
-    base_url = "https://virasatsrc.github.io/museum/"
+    base_url = "https://virasatsrc.github.io/The-Sikh-Regiment-History/"
 
     excluded = {"googlec6765fedd1f53eb0.html", "art_template.html", "index_template.html"}
     all_files = sorted(list(set(glob.glob("*.html")) - excluded))

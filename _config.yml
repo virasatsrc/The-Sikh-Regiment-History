@@ -1,0 +1,21 @@
+# GitHub Pages Jekyll Configuration
+name: "The Sikh Regiment History"
+title: "The Sikh Regiment History"
+description: "The official digital portal and Heritage Museum of The Sikh Regimental Centre at Ramgarh Cantt. Discover over a century of valour, 190+ historic exhibits, Victoria Cross and Param Vir Chakra heroes including Jemadar Nand Singh VC MVC, Battle of Saragarhi, and multilingual audio guides."
+url: "https://virasatsrc.github.io"
+baseurl: "/The-Sikh-Regiment-History"
+repository: "virasatsrc/The-Sikh-Regiment-History"
+
+# Build Settings
+markdown: kramdown
+include:
+  - _redirects
+  - googlec6765fedd1f53eb0.html
+  - sitemap.xml
+  - robots.txt
+exclude:
+  - "*.py"
+  - translations_cache.json
+  - __pycache__
+  - scratch
+

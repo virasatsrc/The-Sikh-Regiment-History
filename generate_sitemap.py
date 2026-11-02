@@ -89,7 +89,7 @@ def generate():
         priority, freq = get_priority_and_freq(f)
         title, imgs = get_file_metadata(f)
         
-        loc = base_url + f
+        loc = base_url if f == "index.html" else base_url + f
         xml_lines.append("  <url>")
         xml_lines.append(f"    <loc>{html.escape(loc)}</loc>")
         xml_lines.append(f"    <lastmod>{today}</lastmod>")

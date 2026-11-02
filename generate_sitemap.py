@@ -12,6 +12,7 @@ import os
 import re
 import html
 import urllib.parse
+from xml.sax.saxutils import escape
 import xml.etree.ElementTree as ET
 from datetime import date
 
@@ -117,7 +118,8 @@ def generate():
             img_url = base_url + encoded_img_path
             xml_lines.append("    <image:image>")
             xml_lines.append(f"      <image:loc>{html.escape(img_url)}</image:loc>")
-            xml_lines.append(f"      <image:title>{html.escape(title)}</image:title>")
+            clean_title = escape(html.unescape(html.unescape(title)))
+            xml_lines.append(f"      <image:title>{clean_title}</image:title>")
             xml_lines.append("    </image:image>")
             
         xml_lines.append("  </url>")
